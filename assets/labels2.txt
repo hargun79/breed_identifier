@@ -1,0 +1,65 @@
+0 Abyssinian
+1 American Bobtail
+2 American Curl
+3 American Shorthair
+4 American Wirehair
+5 Applehead Siamese
+6 Balinese
+7 Bengal Cat
+8 Birman
+9 Bombay Cat
+10 British Shorthair
+11 Burmese
+12 Burmilla
+13 Calico
+14 Canadian Hairless
+15 Chartreux
+16 Chausie
+17 Cornish Rex
+18 Cymric
+19 Devon Rex
+20 Dilute Calico
+21 Dilute Tortoiseshell
+22 Domestic Long Hair
+23 Domestic Medium Hair
+24 Domestic Short Hair
+25 Egyptian Mau
+26 Exotic Short Hair
+27 Hemingway Polydactyl
+28 Havana
+29 Himalayan Cat
+30 Japanese Bobtail
+31 Javanese
+32 Korat
+33 LaPerm
+34 Maine Coon
+35 Manx
+36 Munchkin
+37 Nebelung
+38 Norwegian Forest Cat
+39 Ocicat
+40 Oriental Long Hair
+41 Oriental Short Hair
+42 Oriental Tabby
+43 Persian
+44 Pixiebob
+45 Ragamuffin
+46 Ragdoll
+47 Russian Blue
+48 Scottish Fold
+49 Selkirk Rex
+50 Siamese
+51 Siberian
+52 Silver
+53 Singapura
+54 Snowshoe
+55 Somali
+56 Sphynx Hairless Cat
+57 Tabby
+58 Tiger
+59 Tonkinese
+60 Torbie
+61 Tortoiseshell
+62 Turkish Angora
+63 Turkish Van
+64 Tuxedo
