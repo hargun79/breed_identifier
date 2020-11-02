@@ -46,13 +46,13 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
           SizedBox(
-            height: 100,
+            height: 50,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               Text(
-                'Breed Classifier',
+                'Select Animal',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 50, fontWeight: FontWeight.w100),
               ),
@@ -65,8 +65,8 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ButtonTheme(
-                minWidth: 200,
-                height: 50,
+                minWidth: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 3,
                 buttonColor: Color(0xFF654ea3),
                 child: RaisedButton(
                   onPressed: () {
@@ -78,6 +78,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                   textColor: Colors.white,
                   padding: const EdgeInsets.all(0.0),
                   child: Container(
+                    alignment: Alignment.center,
+                    width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.height / 3,
                     decoration: const BoxDecoration(
                       gradient: LinearGradient(
                         colors: <Color>[
@@ -88,21 +91,25 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                       ),
                     ),
                     padding: const EdgeInsets.all(10.0),
-                    child: const Text('Dogs'),
+                    child: const Text(
+                      'Dogs',
+                      style:
+                          TextStyle(fontSize: 50, fontWeight: FontWeight.w200),
+                    ),
                   ),
                 ),
               ),
             ],
           ),
           SizedBox(
-            height: 50,
+            height: 5,
           ),
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               ButtonTheme(
-                minWidth: 200,
-                height: 50,
+                minWidth: MediaQuery.of(context).size.width,
+                height: MediaQuery.of(context).size.height / 3,
                 buttonColor: Color(0xFF654ea3),
                 child: RaisedButton(
                   onPressed: () {
@@ -114,6 +121,9 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                   textColor: Colors.white,
                   padding: const EdgeInsets.all(0.0),
                   child: Container(
+                    alignment: Alignment.center,
+                    width: MediaQuery.of(context).size.width,
+                    height: MediaQuery.of(context).size.height / 3,
                     decoration: const BoxDecoration(
                       gradient: LinearGradient(
                         colors: <Color>[
@@ -123,7 +133,11 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                       ),
                     ),
                     padding: const EdgeInsets.all(10.0),
-                    child: const Text('Cats'),
+                    child: const Text(
+                      'Cats',
+                      style:
+                          TextStyle(fontSize: 50, fontWeight: FontWeight.w200),
+                    ),
                   ),
                 ),
               ),

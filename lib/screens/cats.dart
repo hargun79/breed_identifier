@@ -114,7 +114,23 @@ class _CatsState extends State<Cats> with TickerProviderStateMixin {
                                 background: Paint()..color = Colors.white,
                                 fontWeight: FontWeight.bold),
                           )
-                        : Text("Classification Waiting")
+                        : Expanded(
+                            child: new Stack(
+                              children: <Widget>[
+                                new Container(
+                                  //width: MediaQuery.of(context).size.width * 0.95,
+                                  height:
+                                      MediaQuery.of(context).size.height * 0.8,
+                                  decoration: new BoxDecoration(
+                                    image: new DecorationImage(
+                                      image: new AssetImage("assets/cats.jpg"),
+                                      fit: BoxFit.cover,
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          )
                   ],
                 ),
               ),

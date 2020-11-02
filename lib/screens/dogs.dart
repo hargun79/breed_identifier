@@ -121,7 +121,23 @@ class _DogsState extends State<Dogs> with TickerProviderStateMixin {
                                   background: Paint()..color = Colors.white,
                                   fontWeight: FontWeight.bold),
                             )
-                          : Text("Classification Waiting")
+                          : Expanded(
+                              child: new Stack(
+                                children: <Widget>[
+                                  new Container(
+                                    // width: MediaQuery.of(context).size.width,
+                                    //height: MediaQuery.of(context).size.height * 0.8,
+                                    decoration: new BoxDecoration(
+                                      image: new DecorationImage(
+                                        image:
+                                            new AssetImage("assets/dogs.jpg"),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
                     ],
                   ),
                 );
