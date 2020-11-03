@@ -85,7 +85,7 @@ class _DogsState extends State<Dogs> with TickerProviderStateMixin {
     return Scaffold(
         appBar: AppBar(
           title: Text('Dogs Breed Classifier'),
-          backgroundColor: Colors.purple,
+          backgroundColor: Colors.pinkAccent,
         ),
         body: FutureBuilder(builder: (context, projectSnap) {
           return _loading

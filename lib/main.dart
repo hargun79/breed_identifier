@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
       DeviceOrientation.portraitDown,
     ]);
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Breed Classifier',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blue,
@@ -39,7 +39,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
     return Scaffold(
       appBar: AppBar(
         title: Text('Breed Classifier'),
-        backgroundColor: Colors.purple,
+        backgroundColor: Colors.pinkAccent,
       ),
       body: Container(
           child: Column(
@@ -84,8 +84,8 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     decoration: const BoxDecoration(
                       gradient: LinearGradient(
                         colors: <Color>[
-                          Color(0xFF654ea3),
-                          Color(0xFFeaafc8),
+                          Color(0xFFee0979),
+                          Color(0xFFff6a00),
                           //Color(0xFF42A5F5),
                         ],
                       ),
@@ -127,8 +127,8 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     decoration: const BoxDecoration(
                       gradient: LinearGradient(
                         colors: <Color>[
-                          Color(0xFF654ea3),
-                          Color(0xFFeaafc8),
+                          Color(0xFFee0979),
+                          Color(0xFFff6a00),
                         ],
                       ),
                     ),

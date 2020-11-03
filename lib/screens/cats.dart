@@ -83,7 +83,7 @@ class _CatsState extends State<Cats> with TickerProviderStateMixin {
     return Scaffold(
         appBar: AppBar(
           title: Text('Cats Breed Classifier'),
-          backgroundColor: Colors.purple,
+          backgroundColor: Colors.pinkAccent,
         ),
         body: _loading
             ? Container(
