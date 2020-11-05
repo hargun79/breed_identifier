@@ -1,16 +1,5 @@
-# breed_identifier
+# Breed Classifier
 
-A new Flutter application.
+This is a Flutter application which uses TensorFlow Lite models to predict different dog and cat breeds.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+APK Drive Link: https://drive.google.com/file/d/1NNifFOvQ9cYIniqAqs1BNCEAt0AHNVAY/view?usp=sharing
