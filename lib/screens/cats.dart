@@ -105,14 +105,37 @@ class _CatsState extends State<Cats> with TickerProviderStateMixin {
                       height: 20,
                     ),
                     _outputs != null
-                        ? Text(
-                            "${_outputs[0]["label"]}"
-                                .replaceAll(RegExp(r'[0-9]'), ''),
-                            style: TextStyle(
-                                color: Colors.black,
-                                fontSize: 20.0,
-                                background: Paint()..color = Colors.white,
-                                fontWeight: FontWeight.bold),
+                        ? Container(
+                            child: Column(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              crossAxisAlignment: CrossAxisAlignment.center,
+                              children: [
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                      "${_outputs[0]["label"]}".replaceAll(
+                                          RegExp(r'[0-9]') ??
+                                              "Classification failed. Please try again!",
+                                          ''),
+                                      style: TextStyle(
+                                          color: Colors.black,
+                                          fontSize: 25.0,
+                                          fontWeight: FontWeight.bold),
+                                    ),
+                                  ],
+                                ),
+                                Row(
+                                  mainAxisAlignment: MainAxisAlignment.center,
+                                  crossAxisAlignment: CrossAxisAlignment.center,
+                                  children: [
+                                    Text(
+                                        "Confidence: ${_outputs[0]["confidence"]}")
+                                  ],
+                                ),
+                              ],
+                            ),
                           )
                         : Expanded(
                             child: new Stack(

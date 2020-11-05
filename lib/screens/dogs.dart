@@ -73,7 +73,7 @@ class _DogsState extends State<Dogs> with TickerProviderStateMixin {
       //Declare List _outputs in the class which will be used to show the classified class name and confidence
       _outputs = output;
       print("HI1");
-      print(_outputs);
+      print(_outputs[0]["confidence"]);
       print("HI2");
     });
   }
@@ -110,16 +110,39 @@ class _DogsState extends State<Dogs> with TickerProviderStateMixin {
                         height: 20,
                       ),
                       check(_outputs)
-                          ? Text(
-                              "${_outputs[0]["label"]}".replaceAll(
-                                  RegExp(r'[0-9]') ??
-                                      "Classification failed. Please try again!",
-                                  ''),
-                              style: TextStyle(
-                                  color: Colors.black,
-                                  fontSize: 20.0,
-                                  background: Paint()..color = Colors.white,
-                                  fontWeight: FontWeight.bold),
+                          ? Container(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                crossAxisAlignment: CrossAxisAlignment.center,
+                                children: [
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                        "${_outputs[0]["label"]}".replaceAll(
+                                            RegExp(r'[0-9]') ??
+                                                "Classification failed. Please try again!",
+                                            ''),
+                                        style: TextStyle(
+                                            color: Colors.black,
+                                            fontSize: 25.0,
+                                            fontWeight: FontWeight.bold),
+                                      ),
+                                    ],
+                                  ),
+                                  Row(
+                                    mainAxisAlignment: MainAxisAlignment.center,
+                                    crossAxisAlignment:
+                                        CrossAxisAlignment.center,
+                                    children: [
+                                      Text(
+                                          "Confidence: ${_outputs[0]["confidence"]}")
+                                    ],
+                                  ),
+                                ],
+                              ),
                             )
                           : Expanded(
                               child: new Stack(

@@ -92,7 +92,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     ),
                     padding: const EdgeInsets.all(10.0),
                     child: const Text(
-                      'Dogs',
+                      'Dog',
                       style:
                           TextStyle(fontSize: 50, fontWeight: FontWeight.w200),
                     ),
@@ -134,7 +134,7 @@ class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
                     ),
                     padding: const EdgeInsets.all(10.0),
                     child: const Text(
-                      'Cats',
+                      'Cat',
                       style:
                           TextStyle(fontSize: 50, fontWeight: FontWeight.w200),
                     ),
